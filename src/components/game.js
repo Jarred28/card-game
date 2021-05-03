@@ -74,7 +74,7 @@ const Game = () => {
         onChangePlayer={setCurrentPlayer}
         round={round}
       />
-      <Modal show={!modal.hidden} onHide={closeModal}>
+      <Modal show={!modal.hidden} onHide={closeModal} backdrop="static">
         <Modal.Header closeButton>
           <Modal.Title>{modal.text}</Modal.Title>
         </Modal.Header>
